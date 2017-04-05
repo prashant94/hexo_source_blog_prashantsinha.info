@@ -13,8 +13,7 @@ metaAlignment: left
 coverImage: 
 coverCaption: 
 coverMeta: out
-coverSize: full
-coverImage: 
+coverSize: full 
 gallery:
 comments: false
 meta: false
