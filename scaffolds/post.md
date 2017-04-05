@@ -3,19 +3,25 @@ title: {{ title }}
 date: {{ date }}
 tags:
 categories:
-disqusIdentifier: 
+disqusIdentifier: {{ title }}
 keywords:
 clearReading: true
-thumbnailImage: 
-thumbnailImagePosition: right
-autoThumbnailImage: yes
+thumbnailImage: thumb.jpg
+thumbnailImagePosition: left
+autoThumbnailImage: true
 metaAlignment: left
 coverImage: 
 coverCaption: 
 coverMeta: out
-coverSize: full 
+coverSize: partial 
 gallery:
-comments: false
-meta: false
-actions: false
+comments: true
+meta: true
+actions: true
 ---
+
+Insert the description for mail here. 
+
+<!-- more -->
+
+Begin Here.
