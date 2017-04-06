@@ -152,31 +152,33 @@
         fb_app_id: theme.fb_app_id
     }) %>
     <% if (publisher) { %>
-        <link rel="publisher" href="https://plus.google.com/<%= publisher %>"/>
+        <link rel="publisher" href="https://plus.google.com/<%= publisher %>">
     <% } %>
     <% if (typeof fb_admin_ids !== 'undefined') { %>
         <% fb_admin_ids.forEach(function(fb_admin_id) { %>
-            <meta property="fb:admins" content="<%= fb_admin_id %>" />
+            <meta property="fb:admins" content="<%= fb_admin_id %>">
         <% }) %>
     <% } %>
-    <% if (theme.gravatar_email) { %>
-        <meta property="og:image" content="<%- gravatar(theme.gravatar_email, 640) %>"/>
-    <% } else if (theme.author.picture) { %>
-        <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.author.picture) %>"/>
+    <% if (page.coverImage && page.coverImage.length) { %>
+        <meta property="og:image" content="<%= resolve_asset_url(page.path, page.coverImage) %>">
+        <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.coverImage) %>">
     <% } %>
     <% if (page.thumbnailImage && page.thumbnailImage.length) { %>
-        <meta property="og:image" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>"/>
-        <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>" />
-    <% } %>
-    <% if (page.coverImage && page.coverImage.length) { %>
-        <meta property="og:image" content="<%= resolve_asset_url(page.path, page.coverImage) %>"/>
-        <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.coverImage) %>" />
+        <meta property="og:image" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>">
+        <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>">
     <% } %>
     <% if (photos && photos.length) { %>
         <% photos.forEach(function(photo) { %>
-            <meta property="og:image" content="<%= photo %>" />
-            <meta class="swiftype" name="image" data-type="enum" content="<%= photo %>" />
+            <meta property="og:image" content="<%= photo %>">
+            <meta class="swiftype" name="image" data-type="enum" content="<%= photo %>">
         <% }) %>
+    <% } %>
+    <% if (!is_post()) { %>   
+	    <% if (theme.gravatar_email) { %>
+	        <meta property="og:image" content="<%- gravatar(theme.gravatar_email, 640) %>">
+	    <% } else if (theme.author.picture) { %>
+	        <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.author.picture) %>">
+	    <% } %>
     <% } %>
     <!--STYLES-->
     <%- css('assets/css/style-sxklfps8ywgfyyjcowvnb4gxdgt0zjts3hsguljmv9uqanxjbnitrovtbrek.min.css') %>
