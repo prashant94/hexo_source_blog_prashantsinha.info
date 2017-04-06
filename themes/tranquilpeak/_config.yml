@@ -72,19 +72,19 @@ sidebar:
         #     icon: stack-overflow
         facebook:
             title: global.facebook
-            url: https://facebook.com/
+            url: https://fb.me/prashantsinha.info
             icon: facebook
         google_plus:
             title: global.google_plus
-            url: https://plus.google.com/
+            url: https://plus.google.com/+PrashantSinhaFortyTwo
             icon: google-plus
         twitter:
             title: global.twitter
-            url: https://twitter.com/
+            url: https://twitter.com/fortytwoblog
             icon: twitter
         linked_in:
             title: global.linkedin
-            url: https://www.linkedin.com/profile/
+            url: https://www.linkedin.com/profile/prashantsinha94
             icon: linkedin
     rss:
         rss:
@@ -120,10 +120,10 @@ author:
     # Overwritten by your gravatar image if `gravatar_email` is filled
     picture: logo.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter:
+    twitter: fortytwoblog
     # Your personal google plus profile id, not your blog or business page id.
     # E.g : `+JohnDoe` or `123812884128439`
-    google_plus:
+    google_plus: +PrashantSinhaFortyTwo
     # Your businnes google plus profile id. If not provided, personal will be used instead.
     # E.g : `+Tranquilpeak` or `123812884128439`
     google_plus_business:
@@ -198,9 +198,9 @@ baidu_analytics_id:
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
 gravatar_email:
 # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
-fb_admin_ids:
+fb_admin_ids: 160090960757109
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
-fb_app_id:
+fb_app_id: 441349206213726
 
 
 # Sharing options
