@@ -3,7 +3,7 @@ title: {{ title }}
 date: {{ date }}
 tags:
 categories:
-disqusIdentifier: {{ title }}
+disqusIdentifier: {{ date }}/{{ title }}
 keywords:
 clearReading: true
 thumbnailImage: thumb.jpg
