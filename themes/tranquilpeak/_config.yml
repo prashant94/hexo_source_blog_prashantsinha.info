@@ -217,6 +217,12 @@ sharing_options:
     google_plus:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
+    reddit:
+        icon: "fa-reddit "
+        url: "http://www.reddit.com/submit?title={{post.title}}&url={{post.permalink}}"
+    linkedin:
+        icon: "fa-linkedin-square"
+        url: "https://www.linkedin.com/shareArticle?mini=true&url={{post.permalink}}&title={{post.title}}"
     # Asian social networks
     # weibo:
     #     title: "Weibo"
