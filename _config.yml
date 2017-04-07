@@ -77,6 +77,9 @@ imagemin:
   optimizationLevel: 2
   pngquant   : false
   progressive: false
+
+sitemap:
+    path: sitemap.xml
 # - 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

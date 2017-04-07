@@ -117,6 +117,7 @@
     <title><%= title %></title>
     <meta name="author" content="<%= config.author %>">
     <meta name="theme-color" content="#1d1f21">
+    <%- autoCanonical(config, page) %>
     <% if (keywords) { %>
         <meta name="keywords" content="<%= keywords %>">
     <% } %>
