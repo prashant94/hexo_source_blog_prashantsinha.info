@@ -70,7 +70,13 @@ algolia:
     - excerpt
     - excerpt:strip
 
-
+imagemin:
+  enable     : true
+  interlaced : false
+  multipass  : false
+  optimizationLevel: 2
+  pngquant   : false
+  progressive: false
 # - 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
