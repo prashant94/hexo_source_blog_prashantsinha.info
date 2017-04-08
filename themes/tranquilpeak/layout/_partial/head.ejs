@@ -174,13 +174,14 @@
             <meta class="swiftype" name="image" data-type="enum" content="<%= photo %>">
         <% }) %>
     <% } %>
-    <% if (!is_post()) { %>   
-	    <% } if (theme.ogimage) { %>
-			<meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.ogimage) %>">
+    <% if (!is_post()) { %>
+        <% if (theme.ogimage) { %>  
+            <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.ogimage) %>">
 			<meta property="og:image:height" content="313">
 			<meta property="og:image:width" content="599">
-	    <% } %>
+        <% } %>    
     <% } %>
+
     <!--STYLES-->
     <%- css('assets/css/style-sxklfps8ywgfyyjcowvnb4gxdgt0zjts3hsguljmv9uqanxjbnitrovtbrek.min.css') %>
     <!--STYLES END-->
