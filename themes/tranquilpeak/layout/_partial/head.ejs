@@ -162,20 +162,24 @@
     <% } %>
     <% if (page.coverImage && page.coverImage.length) { %>
         <meta property="og:image" content="<%= resolve_asset_url(page.path, page.coverImage) %>">
+        <meta property="twitter:image" content="<%= resolve_asset_url(page.path, page.coverImage) %>">
         <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.coverImage) %>">
     <% } %>
     <% if (page.thumbnailImage && page.thumbnailImage.length) { %>
         <meta property="og:image" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>">
+        <meta property="twitter:image" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>">
         <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>">
     <% } %>
     <% if (photos && photos.length) { %>
         <% photos.forEach(function(photo) { %>
             <meta property="og:image" content="<%= photo %>">
+            <meta property="twitter:image" content="<%= photo %>">
             <meta class="swiftype" name="image" data-type="enum" content="<%= photo %>">
         <% }) %>
     <% } %>
     <% if (!is_post()) { %>
-        <% if (theme.ogimage) { %>  
+        <% if (theme.ogimage) { %> 
+        	<meta property="twitter:image" content="<%= resolve_asset_url(theme.image_dir, theme.ogimage) %>"> 
             <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.ogimage) %>">
 			<meta property="og:image:height" content="313">
 			<meta property="og:image:width" content="599">
